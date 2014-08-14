@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rich.pokerhandevaluator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rich.pokerhandevaluator.MainScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rich.pokerhandevaluator.ChoosePlayers"
+            android:label="@string/title_activity_choose_players"
+            android:parentActivityName="com.rich.pokerhandevaluator.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pokerhandevaluator.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.rich.pokerhandevaluator.Texas_Holdem"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_activity_texas__holdem"
+            android:parentActivityName="com.rich.pokerhandevaluator.ChoosePlayers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pokerhandevaluator.ChoosePlayers" />
+        </activity>
+        <activity
+            android:name="com.rich.pokerhandevaluator.PokerRanks"
+            android:label="@string/title_activity_poker_ranks"
+            android:parentActivityName="com.rich.pokerhandevaluator.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pokerhandevaluator.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.rich.pokerhandevaluator.Odds"
+            android:label="@string/title_activity_odds"
+            android:parentActivityName="com.rich.pokerhandevaluator.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pokerhandevaluator.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.rich.pokerhandevaluator.ChoosePlayersOdds"
+            android:label="@string/title_activity_choose_players_odds" >
+        </activity>
+    </application>
+
+</manifest>

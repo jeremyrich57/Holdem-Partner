@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/main"
+        android:title="@string/main_screen"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/PokerRanks"
+        android:title="@string/hand_ranks"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/holdem"
+        android:title="@string/check_win"
+        android:showAsAction="never" />
+    
+     <item android:id="@+id/OddschangePlayers"
+        android:title="@string/change_players"
+        android:icon="@drawable/ic_change_players"
+        android:showAsAction="always" />
+    
+    <item android:id="@+id/reset"
+        android:title="@string/reset"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh" />
+
+</menu>

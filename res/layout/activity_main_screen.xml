@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="#669900"
+    android:src="@drawable/holdem_background3"
+    android:layout_gravity="center" >
+    <!-- <ImageView 
+        android:id="@+id/title_pic"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/title_pic"
+		android:layout_marginTop="1dp"
+		 /> -->
+		 
+		 <TextView 
+		     android:text="@string/title"
+		     android:gravity="center"
+		     android:textSize="48sp"
+		     android:padding="3dp"
+       	 	 android:layout_width="match_parent"
+        	 android:layout_height="wrap_content"
+        	 android:layout_marginTop="60dp"
+        	 android:shadowColor="#70FF8800"
+        	 android:shadowDx="0"
+        	 android:shadowDy="0"
+        	 android:shadowRadius="15"
+        	 android:textStyle="bold"
+        	  />
+		 <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="bottom"
+	    android:layout_marginBottom="20dp">
+    <LinearLayout 
+        android:id="@+id/icons"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="bottom"
+    	android:gravity="center" >
+
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="left" >
+    	    
+            <TextView
+               android:text="@string/win_chance"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:textColor="#FFFFFF" />
+
+    	<ImageButton
+		android:id="@+id/main_odds"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/card2"
+		android:src="@drawable/odds_icon"
+		android:onClick="odds"
+		android:background="#00000000"
+		android:paddingRight="20dp"
+		android:paddingLeft="20dp"
+		android:paddingTop="5dp" />    
+
+   		 </LinearLayout>
+    	<LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center"
+    	    android:layout_marginTop="60dp"
+    	    android:layout_marginBottom="20dp"
+    	    >
+
+    	<ImageButton
+		android:id="@+id/main_compare"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/card2"
+		android:src="@drawable/compare_icon"
+		android:onClick="choosePlayers" 
+		android:background="#00000000"
+		android:paddingRight="20dp"
+		android:paddingLeft="20dp"
+		android:paddingBottom="5dp"
+		 />
+    	
+    	<TextView
+               android:text="@string/check_who_wins"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:textColor="#FFFFFF" />
+
+   		 </LinearLayout>
+    
+    	<LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="right"
+    	    
+    	    >
+    	
+    	    <TextView
+               android:text="@string/main_hand_ranks"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:textColor="#FFFFFF" />
+    
+    	<ImageButton
+		android:id="@+id/main_ranks"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/card2"
+		android:src="@drawable/ranks_icon"
+		android:onClick="pokerRanks"
+		android:background="#00000000"
+		android:paddingRight="20dp"
+		android:paddingLeft="20dp"
+		android:paddingTop="5dp"
+		android:layout_marginBottom="10dp" />
+
+    
+	</LinearLayout>
+
+
+    
+    
+ </LinearLayout>   
+    
+</LinearLayout>
+
+</LinearLayout>

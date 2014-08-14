@@ -1,0 +1,552 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Texas_Holdem" 
+    android:background="#669900">
+
+    
+
+
+    <TextView
+        android:id="@+id/txtCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="5dp" />
+	
+    <LinearLayout 
+            android:id="@+id/linDeckScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+    <ImageView 
+            android:src="@drawable/scroll_arrow_left"
+            android:id="@+id/left_arrow"
+            android:contentDescription="@string/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:visibility="invisible" />
+	<HorizontalScrollView
+	    android:id="@+id/horizontalScrollView1"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1" >
+		<LinearLayout 
+		android:id="@+id/linCards"    
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:paddingBottom="5dp"
+	    >
+	    </LinearLayout>
+	</HorizontalScrollView>
+	<ImageView 
+            android:src="@drawable/scroll_arrow_right"
+            android:id="@+id/right_arrow"
+            android:contentDescription="@string/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp" />
+	
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/bar0"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        />
+	
+	<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<LinearLayout
+		    android:id="@+id/linPlayerTable"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+			
+	<TextView
+        android:id="@+id/txtTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/table_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<HorizontalScrollView
+	    android:id="@+id/horizontalScrollView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	<LinearLayout 
+	    android:id="@+id/linTable"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="5dp"
+        android:paddingTop="5dp" >	    
+        
+	    <ImageButton
+	        android:id="@+id/ibTableCard1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	    <ImageButton
+	        android:id="@+id/ibTableCard2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	    <ImageButton
+	        android:id="@+id/ibTableCard3"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	    <ImageButton
+	        android:id="@+id/ibTableCard4"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	    <ImageButton
+	        android:id="@+id/ibTableCard5"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+		    
+	</LinearLayout>
+	</HorizontalScrollView>
+	
+	<View 
+	    android:id="@+id/barTable"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"/>
+	
+	<TextView
+        android:id="@+id/txtPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player1_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp" >  
+        <ImageButton
+	        android:id="@+id/ibPlayer1Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer1Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <!-- 
+        <Button
+           android:id="@+id/btnCompare"
+		   android:background="@drawable/roundbutton"
+           android:text="@string/check_win"
+           android:onClick="checkWinButton"
+           android:layout_marginLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/card2"
+           android:visibility="invisible" 
+           android:padding="5dp" /> --> 
+           </LinearLayout>	
+	<View
+	    android:id="@+id/barPlayer1"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"/>
+
+	<TextView
+        android:id="@+id/txtPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player2_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer2Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer2Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer2"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"/>
+	
+	<TextView
+        android:id="@+id/txtPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player3_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer3Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer3Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer3"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player4_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer4Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer4Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer4"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player5_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer5Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer5Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer5"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player6_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer6Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer6Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer6"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player7_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer7Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer7Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer7"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player8_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer8"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer8Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer8Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer8"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+	
+	<TextView
+        android:id="@+id/txtPlayer9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player9_show_cards"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+	<LinearLayout 
+	    android:id="@+id/linPlayer9"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+	    <ImageButton
+	        android:id="@+id/ibPlayer9Card1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+        <ImageButton
+	        android:id="@+id/ibPlayer9Card2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:padding="1dp"
+		    android:contentDescription="@string/card2"
+		    android:src="@drawable/back_card"
+		    android:clickable="false" />
+	</LinearLayout>
+	
+	<View 
+	    android:id="@+id/barPlayer9"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp" 
+        android:background="#85FF8800"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+
+	<Button
+         android:id="@+id/btnCompare2"
+   		 android:background="@drawable/roundbutton"
+         android:text="@string/check_win"
+         android:onClick="checkWinButton"
+         android:layout_marginTop="30dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:contentDescription="@string/card2"
+         android:visibility="invisible" 
+         android:padding="5dp"
+         android:layout_gravity="center" />  
+	
+</LinearLayout> 
+</ScrollView>
+
+
+</LinearLayout>

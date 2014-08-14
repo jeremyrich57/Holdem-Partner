@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PokerRanks" 
+    android:orientation="vertical"
+    android:background="#669900" 
+     >
+    
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hand_ranks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="2dp" />
+
+    <ImageView 
+        android:id="@+id/straight_flush"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/straight_flush_desc"
+		 />
+    
+	 <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+    
+	<ImageView 
+        android:id="@+id/four_kind"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/four_kind_desc"
+		 />
+    
+	 <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+    
+    <ImageView 
+        android:id="@+id/full_house"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/full_house_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp" 
+        android:layout_gravity="center_horizontal" />
+    
+    <ImageView 
+        android:id="@+id/flush_desc"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/flush_desc"
+		 />
+    
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+    
+    <ImageView 
+        android:id="@+id/straight_desc"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/straight_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+   
+    <ImageView 
+        android:id="@+id/three_kind"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/three_kind_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+   
+    <ImageView 
+        android:id="@+id/two_pair"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/two_pair_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+   
+    <ImageView 
+        android:id="@+id/one_pair"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/one_pair_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp" 
+        android:layout_gravity="center_horizontal"/>
+   
+    <ImageView 
+        android:id="@+id/high_card"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/high_card_desc"
+		 />
+    
+    <View 
+        android:layout_width="450dp"
+        android:layout_height="2dp" 
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center_horizontal" />
+   
+    <ImageView 
+        android:id="@+id/kicker"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:contentDescription="@string/card2"
+		android:src="@drawable/kicker_desc"
+		 />
+
+    
+</LinearLayout>     
+</ScrollView>
+</LinearLayout>

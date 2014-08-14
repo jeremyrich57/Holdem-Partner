@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Texas Holdem\' Partner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_choose_players">Choose Players</string>
+    <string name="select_players">Select Players</string>
+    <string name="pick_players">Select Number of Players</string>
+    <string name="pick_flop_cards">Select Flop Cards</string>
+    <string name="pick_turn">Select Turn Card</string>
+    <string name="pick_river">Select River Card</string>
+    <string name="players2">2 Players</string>
+    <string name="players3">3 Players</string>
+    <string name="players4">4 Players</string>
+    <string name="players5">5 Players</string>
+    <string name="players6">6 Players</string>
+    <string name="players7">7 Players</string>
+    <string name="players8">8 Players</string>
+    <string name="players9">9 Players</string>
+    <string name="player1_cards">Select Player 1 Cards</string>
+    <string name="player2_cards">Select Player 2 Cards</string>
+    <string name="player3_cards">Select Player 3 Cards</string>
+    <string name="player4_cards">Select Player 4 Cards</string>
+    <string name="player5_cards">Select Player 5 Cards</string>
+    <string name="player6_cards">Select Player 6 Cards</string>
+    <string name="player7_cards">Select Player 7 Cards</string>
+    <string name="player8_cards">Select Player 8 Cards</string>
+    <string name="player9_cards">Select Player 9 Cards</string>
+    <string name="player1_show_cards">Player 1\'s Cards</string>
+    <string name="player2_show_cards">Player 2\'s Cards</string>
+    <string name="player3_show_cards">Player 3\'s Cards</string>
+    <string name="player4_show_cards">Player 4\'s Cards</string>
+    <string name="player5_show_cards">Player 5\'s Cards</string>
+    <string name="player6_show_cards">Player 6\'s Cards</string>
+    <string name="player7_show_cards">Player 7\'s Cards</string>
+    <string name="player8_show_cards">Player 8\'s Cards</string>
+    <string name="player9_show_cards">Player 9\'s Cards</string>
+    <string name="table_cards">Cards on Table</string>
+    <string name="title_activity_texas__holdem">Texas Holdem!</string>
+    <string name="card2">Playing Cards</string>
+    <string name="check_win">Check Who Wins!</string>
+    <string name="btnEval">Compare Hands</string>
+    <string name="texas_holdem">Texas Hold em!</string>
+    <string name="hand_ranks">Poker Ranks</string>
+    <string name="title_activity_poker_ranks">Poker Rankings</string>
+    <string name="straight_flush">Straight Flush</string>
+    <string name="four_kind">Four of a Kind</string>
+    <string name="full_house">Full House</string>
+    <string name="flush">Flush</string>
+    <string name="straight">Straight</string>
+    <string name="three_kind">Three of a Kind</string>
+    <string name="two_pair">Two Pair</string>
+    <string name="one_pair">One Pair</string>
+    <string name="high_card">High Card</string>
+    
+    <string name="tie">When Players Tie</string>
+    <string name="reset">Start Over</string>
+    <string name="exit">Exit</string>
+    <string name="main_screen">Main Screen</string>
+    <string name="title_activity_odds">Check Win Chance</string>
+    <string name="odds">Check Your Win Chance!</string>
+    <string name="odds_choose_cards">Choose your starting hand</string>
+    <string name="title_activity_choose_players_odds">Choose Players</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="accuracy">Accuracy (5000 Games)</string>
+    <string name="odds_help">Check your chance of winning</string>
+    <string name="odds_dialog">The percentages are approximate and you can 
+        adjust the accuracy by using the + or - buttons to change the number of games it runs. 
+        Hold down on the card if you want to replace it.</string>
+    <string name="okay">Got it!</string>
+    <string name="your_cards">Your Cards</string>
+    <string name="title">Texas Holdem\' \nPartner</string>
+    <string name="compare_help">Check who wins</string>
+    <string name="compare_dialog">Compare each other\'s hands to see who has the highest hand. Hold down on
+        the card if you need to put in back in the deck.</string>
+    <string name="win_chance">Check Win\nChance</string>
+    <string name="check_who_wins">Check Who \nWins</string>
+    <string name="main_hand_ranks"> \nPoker Ranks</string>
+    <string name="change_players">Change Number of Players</string>
+	
+</resources>

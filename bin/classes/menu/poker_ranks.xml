@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item android:id="@+id/main"
+        android:title="@string/main_screen"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/texas_holdem"
+        android:title="@string/check_win"
+        android:showAsAction="never" />
+    
+	<item android:id="@+id/odds"
+	    android:title="@string/odds"
+	    android:showAsAction="never" />
+
+</menu>
